@@ -12,7 +12,6 @@ class UI {
   }
 
   loadUI(weather) {
-    console.log(weather);
     this.location.textContent =
       weather.location.name + "," + weather.location.country;
     this.desc.textContent = weather.current.condition.text;
