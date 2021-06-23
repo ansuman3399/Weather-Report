@@ -1,7 +1,6 @@
 const ui = new UI();
 const storage = new Storage();
 const weatherLocation = storage.getLocationData();
-console.log(weatherLocation);
 const weather = new Weather(weatherLocation.city, weatherLocation.state);
 /* change weather in modal*/
 document.getElementById("w-change-btn").addEventListener("click", (event) => {
